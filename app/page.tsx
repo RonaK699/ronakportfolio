@@ -957,8 +957,8 @@ export default function Portfolio() {
                 viewport={{ once: true }}
               >
                 {[
-                  { number: "50+", label: "Projects Completed", color: "purple" },
-                  { number: "5+", label: "Years Experience", color: "blue" },
+                  { number: "20+", label: "Projects Completed", color: "purple" },
+                  { number: "2+", label: "Years Experience", color: "blue" },
                 ].map((stat, index) => (
                   <motion.div
                     key={index}
@@ -1153,18 +1153,7 @@ export default function Portfolio() {
                               onClick={() => window.open(project.link, "_blank")}
                             >
                               <ExternalLink className="w-4 h-4 mr-2 group-hover:rotate-45 transition-transform" />
-                              Live Demo
-                            </MagneticButton>
-                          )}
-                          {project.hasCode && (
-                            <MagneticButton
-                              size="sm"
-                              variant="outline"
-                              className="border-white/30 text-white hover:bg-white/10 bg-transparent group"
-                              onClick={() => window.open(project.github, "_blank")}
-                            >
-                              <Github className="w-4 h-4 mr-2 group-hover:scale-110 transition-transform" />
-                              Code
+                              Live
                             </MagneticButton>
                           )}
                           {project.status === "In Development" && (
@@ -1547,7 +1536,7 @@ export default function Portfolio() {
       >
         <div className="container mx-auto px-6 text-center">
           <motion.p className="text-white/50" whileHover={{ color: "rgba(255, 255, 255, 0.8)" }}>
-            © 2024 Ronak. All rights reserved. Built with passion and cutting-edge technology.
+             Built with passion and cutting-edge technology.
           </motion.p>
         </div>
       </motion.footer>
